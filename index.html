@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Encriptar Desencriptar</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+
+</div>
+    <main>
+        <div class="logo">
+            <h1><img src="imagenes/logo.png"></h1>
+        </div>
+
+        <div class="container-left">
+            <textarea class='input-textarea' placeholder="Ingrese un texto" id="input-parrafo" cols="70" rows="10"></textarea>
+            <div class="div-img-check-container">
+               <p> <img class="img-check" src="imagenes/black-checkmark.png" alt="imagen check"> Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="container-buttons">
+                <button onclick="HandleButtonEncriptar('ENCRYPTAR')">Encriptar</button>
+                <button onclick="HandleButtonEncriptar('DESENCRYPTAR')">Desencriptar</button>
+
+            </div>
+        </div>
+        <div class="container-right">
+            <div id="div-out-container-right" class="div-out-container-right">
+                <img class="img-container-right" src="imagenes/Muñeco.png" alt="imagen muñeco">
+                <p class="text1">Ningún mensaje fue encontrado</p>
+                <p class="text2">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div class="div-out-container-right" id='div-out-container-right-text' style="display: none;">
+                <textarea class="out-text" id="text-out"></textarea> 
+                <button class="button-copy" id="btn_copiar" onclick="HandleButtonCopiar()">Copiar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="copyright">Desarrollado por <strong> Benitez Ricardo J.</strong></p>
+            
+    </footer> 
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
